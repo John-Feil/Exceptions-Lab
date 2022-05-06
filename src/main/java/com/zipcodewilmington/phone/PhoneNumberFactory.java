@@ -68,7 +68,6 @@ public final class PhoneNumberFactory {
     public static PhoneNumber createPhoneNumber(String phoneNumberString) throws InvalidPhoneNumberFormatException {
         logger.info("Attempting to create a new PhoneNumber object with a value of " + phoneNumberString);
 
-        PhoneNumber phoneNumber = new PhoneNumber(phoneNumberString);
-        return phoneNumber;
+        return new PhoneNumber(phoneNumberString);
     }
 }
